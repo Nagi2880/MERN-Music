@@ -16,7 +16,6 @@ router.get('/:id',async (req, res) =>{
     res.json(music);
 })
 
-
 //Add songs to the database
 router.post('/', async (req, res) =>{
     const { name, album, author } = req.body;

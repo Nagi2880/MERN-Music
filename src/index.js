@@ -15,10 +15,10 @@ app.use(morgan('dev'))
 app.use(express.json());
 
 //Routes
-app.use('/api/musics',require('./routes/task.routes'));
+app.use('/api/musics',require('./routes/music.routes'));
 
 //Static files
-app.use(express.static(path.join(__dirname + 'public')))
+app.use(express.static(path.join(__dirname, 'public')))
 
 app.listen(app.get('port'),()=>{
     console.log(`Server on port ${app.get('port')}`);
